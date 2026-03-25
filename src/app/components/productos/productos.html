@@ -1,0 +1,31 @@
+<div style="max-width:700px; margin:auto; padding:20px; font-family:sans-serif">
+  <h1>🍔 Menú Fast Food</h1>
+
+  <!-- Formulario -->
+  <div style="border:1px solid #ddd; padding:16px; border-radius:8px; margin-bottom:24px">
+    <h3>{{ editando ? 'Editar' : 'Nuevo' }} Producto</h3>
+    <input [(ngModel)]="form.nombre" placeholder="Nombre" style="display:block;width:100%;margin-bottom:8px;padding:8px"><br>
+    <input [(ngModel)]="form.descripcion" placeholder="Descripción" style="display:block;width:100%;margin-bottom:8px;padding:8px"><br>
+    <input [(ngModel)]="form.precio" type="number" placeholder="Precio" style="display:block;width:100%;margin-bottom:8px;padding:8px"><br>
+    <input [(ngModel)]="form.categoria" placeholder="Categoría" style="display:block;width:100%;margin-bottom:8px;padding:8px"><br>
+    <label>
+      <input [(ngModel)]="form.disponible" type="checkbox"> Disponible
+    </label><br><br>
+    <button (click)="guardar()" style="margin-right:8px;padding:8px 16px;background:#e67e22;color:white;border:none;border-radius:4px;cursor:pointer">
+      {{ editando ? 'Actualizar' : 'Agregar' }}
+    </button>
+    <button *ngIf="editando" (click)="cancelar()" style="padding:8px 16px;cursor:pointer">Cancelar</button>
+  </div>
+
+  <!-- Lista -->
+  <div *ngFor="let p of productos" style="border:1px solid #eee;padding:12px;border-radius:8px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center">
+    <div>
+      <strong>{{ p.nombre }}</strong> — ${{ p.precio }}<br>
+      <small>{{ p.descripcion }} | {{ p.categoria }} | {{ p.disponible ? '✅' : '❌' }}</small>
+    </div>
+    <div>
+      <button (click)="editar(p)" style="margin-right:8px;padding:6px 12px;cursor:pointer">✏️</button>
+      <button (click)="eliminar(p)" style="padding:6px 12px;background:#e74c3c;color:white;border:none;border-radius:4px;cursor:pointer">🗑️</button>
+    </div>
+  </div>
+</div>
