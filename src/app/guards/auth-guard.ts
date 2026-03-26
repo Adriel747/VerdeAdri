@@ -1,7 +1,7 @@
 import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
-import { map, take } from 'rxjs';
+import { map, take, switchMap } from 'rxjs';
 
 export const authGuard: CanActivateFn = () => {
   const auth = inject(AuthService);
@@ -9,10 +9,19 @@ export const authGuard: CanActivateFn = () => {
 
   return auth.usuario$.pipe(
     take(1),
-    map(user => {
-      if (user) return true;
-      router.navigate(['/login']);
-      return false;
+    switchMap(async user => {
+      if (!user) {
+        router.navigate(['/login']);
+        return false;
+      }
+      const rol = auth.rolUsuario ?? await new Promise<string>(resolve => {
+        auth.rol$.pipe(take(1)).subscribe(r => resolve(r ?? 'cliente'));
+      });
+      if (rol !== 'admin') {
+        router.navigate(['/menu']);
+        return false;
+      }
+      return true;
     })
   );
 };
