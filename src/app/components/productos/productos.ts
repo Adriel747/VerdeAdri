@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ProductoService } from '../../services/producto.service';
 import { Producto } from '../../models/producto.model';
+import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-productos',
@@ -10,6 +12,7 @@ import { Producto } from '../../models/producto.model';
   imports: [CommonModule, FormsModule],
   templateUrl: './productos.html',
 })
+
 export class ProductosComponent implements OnInit {
   readonly svc = inject(ProductoService);
 
@@ -51,5 +54,11 @@ export class ProductosComponent implements OnInit {
     this.editando = null;
     this.form = this.formVacio();
   }
-  
+  async logout() {
+  await this.authSvc.logout();
+  this.router.navigate(['/login']);
+}
+  private authSvc = inject(AuthService);
+private router = inject(Router);
+
 }
