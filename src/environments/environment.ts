@@ -1,5 +1,5 @@
 export const environment = {
-  production: false,
+  production: true,
   firebaseConfig: {
     apiKey: "AIzaSyDTP8OlHPrJNmiTeczjx9UHSBVAZKurmHI",
     authDomain: "angularfirebase123.firebaseapp.com",
@@ -8,4 +8,6 @@ export const environment = {
     messagingSenderId: "220413550965",
     appId: "1:220413550965:web:66276f233035533763733c"
   }
+
+
 };
