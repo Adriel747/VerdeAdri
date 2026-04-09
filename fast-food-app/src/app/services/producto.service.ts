@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Producto } from '../models/producto.model';
 
-const API = 'http://localhost:3000';
+const API = 'http://localhost:8080/api';
 
 @Injectable({ providedIn: 'root' })
 export class ProductoService {
@@ -13,17 +13,19 @@ export class ProductoService {
     return this.http.get<Producto[]>(`${API}/productos`);
   }
 
-  addProducto(p: Producto) {
+  getDisponibles(): Observable<Producto[]> {
+    return this.http.get<Producto[]>(`${API}/productos/disponibles`);
+  }
+
+  addProducto(p: Producto): Promise<any> {
     return this.http.post(`${API}/productos`, p).toPromise();
   }
 
-  updateProducto(id: string, dto: Partial<Producto>, original: Partial<Producto>) {
-    return this.http.put(`${API}/productos/${id}`, { dto, original }).toPromise();
+  updateProducto(id: number, p: Partial<Producto>): Promise<any> {
+    return this.http.put(`${API}/productos/${id}`, p).toPromise();
   }
 
-  deleteProducto(id: string, producto: Producto) {
-    return this.http.delete(`${API}/productos/${id}`, {
-      body: { nombre: producto.nombre }
-    }).toPromise();
+  deleteProducto(id: number): Promise<any> {
+    return this.http.delete(`${API}/productos/${id}`).toPromise();
   }
 }

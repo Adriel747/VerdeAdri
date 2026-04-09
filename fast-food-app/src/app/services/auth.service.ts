@@ -1,65 +1,58 @@
 import { Injectable } from '@angular/core';
-import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged, User } from 'firebase/auth';
-import { getApps, initializeApp, getApp } from 'firebase/app';
-import { getFirestore, doc, getDoc } from 'firebase/firestore';
-import { environment } from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject } from 'rxjs';
 
-const app = getApps().length === 0 ? initializeApp(environment.firebaseConfig) : getApp();
-const auth = getAuth(app);
-const db = getFirestore(app);
+const API = 'http://localhost:8080/api';
+
+export interface UsuarioSesion {
+  email: string;
+  rol: string;
+}
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
+  private http = new HttpClient(null as any);
+  private sesion = new BehaviorSubject<UsuarioSesion | null>(this.cargarSesion());
 
-  private usuarioActual = new BehaviorSubject<User | null>(null);
-  private rolActual = new BehaviorSubject<string | null>(null);
+  sesion$ = this.sesion.asObservable();
 
-  usuario$ = this.usuarioActual.asObservable();
-  rol$ = this.rolActual.asObservable();
-
-  constructor() {
-    onAuthStateChanged(auth, async user => {
-      this.usuarioActual.next(user);
-      if (user) {
-        const rol = await this.obtenerRol(user.uid);
-        this.rolActual.next(rol);
-      } else {
-        this.rolActual.next(null);
-      }
-    });
+  constructor(private httpClient: HttpClient) {
+    this.http = httpClient;
   }
 
-  private async obtenerRol(uid: string): Promise<string> {
-    try {
-    console.log('Buscando UID:', uid);
-    const snap = await getDoc(doc(db, 'usuarios', uid));
-    console.log('Documento existe:', snap.exists());
-    console.log('Datos:', snap.data());
-    if (snap.exists()) return snap.data()['rol'];
-    return 'cliente';
-  } catch (e) {
-    console.error('Error obteniendo rol:', e);
-    return 'cliente';
-  }
-  }
-
-  async login(email: string, password: string) {
-    const result = await signInWithEmailAndPassword(auth, email, password);
-    const rol = await this.obtenerRol(result.user.uid);
-    this.rolActual.next(rol);
-    return { user: result.user, rol };
+  async login(email: string, password: string): Promise<UsuarioSesion> {
+    const response = await this.http
+      .post<any>(`${API}/auth/login`, { email, password })
+      .toPromise();
+    const sesion: UsuarioSesion = { email: response.email, rol: response.rol };
+    localStorage.setItem('sesion', JSON.stringify(sesion));
+    this.sesion.next(sesion);
+    return sesion;
   }
 
   logout() {
-    return signOut(auth);
+    localStorage.removeItem('sesion');
+    this.sesion.next(null);
   }
 
-  get usuarioLogueado(): User | null {
-    return this.usuarioActual.value;
+  get usuarioLogueado(): UsuarioSesion | null {
+    return this.sesion.value;
   }
 
-  get rolUsuario(): string | null {
-    return this.rolActual.value;
+  get rol(): string | null {
+    return this.sesion.value?.rol ?? null;
+  }
+
+  estaLogueado(): boolean {
+    return this.sesion.value !== null;
+  }
+
+  private cargarSesion(): UsuarioSesion | null {
+    try {
+      const data = localStorage.getItem('sesion');
+      return data ? JSON.parse(data) : null;
+    } catch {
+      return null;
+    }
   }
 }

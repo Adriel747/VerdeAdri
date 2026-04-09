@@ -8,7 +8,7 @@ import { AuthService } from '../../services/auth.service';
   selector: 'app-login',
   standalone: true,
   imports: [FormsModule, CommonModule],
-  templateUrl: './login.html'
+  templateUrl: './login.html',
 })
 export class LoginComponent {
   private auth = inject(AuthService);
@@ -19,16 +19,16 @@ export class LoginComponent {
   error = '';
   cargando = false;
 
-async login() {
-  this.error = '';
-  this.cargando = true;
-  try {
-    const { rol } = await this.auth.login(this.email, this.password);
-    this.router.navigate([rol === 'admin' ? '/admin' : '/menu']);
-  } catch (e: any) {
-    this.error = 'Credenciales incorrectas. Intenta de nuevo.';
-  } finally {
-    this.cargando = false;
+  async login() {
+    this.error = '';
+    this.cargando = true;
+    try {
+      const sesion = await this.auth.login(this.email, this.password);
+      this.router.navigate([sesion.rol === 'admin' ? '/admin' : '/menu']);
+    } catch (e: any) {
+      this.error = 'Credenciales incorrectas. Intenta de nuevo.';
+    } finally {
+      this.cargando = false;
+    }
   }
-}
 }
