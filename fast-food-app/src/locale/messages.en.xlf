@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2">
+  <file source-language="es" target-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="login.title"><source>Verde Sazón</source><target>Verde Sazón</target></trans-unit>
+      <trans-unit id="login.subtitle"><source>Inicia sesión en tu cuenta</source><target>Sign in to your account</target></trans-unit>
+      <trans-unit id="login.email"><source>Correo electrónico</source><target>Email address</target></trans-unit>
+      <trans-unit id="login.email.placeholder"><source>tu@email.com</source><target>your@email.com</target></trans-unit>
+      <trans-unit id="login.password"><source>Contraseña</source><target>Password</target></trans-unit>
+      <trans-unit id="login.password.placeholder"><source>••••••••</source><target>••••••••</target></trans-unit>
+      <trans-unit id="login.forgot"><source>¿Olvidaste tu contraseña?</source><target>Forgot your password?</target></trans-unit>
+      <trans-unit id="login.button"><source>Iniciar sesión</source><target>Sign in</target></trans-unit>
+      <trans-unit id="login.loading"><source>Entrando...</source><target>Signing in...</target></trans-unit>
+      <trans-unit id="login.noAccount"><source>¿No tienes cuenta?</source><target>Don't have an account?</target></trans-unit>
+      <trans-unit id="login.register"><source>Regístrate aquí</source><target>Register here</target></trans-unit>
+      <trans-unit id="nav.inicio"><source>Inicio</source><target>Home</target></trans-unit>
+      <trans-unit id="nav.categorias"><source>Categorías</source><target>Categories</target></trans-unit>
+      <trans-unit id="nav.menu"><source>Menú</source><target>Menu</target></trans-unit>
+      <trans-unit id="hero.title"><source>Comida fresca y saludable</source><target>Fresh and healthy food</target></trans-unit>
+      <trans-unit id="hero.subtitle"><source>Descubre nuestros platillos disponibles hoy</source><target>Discover our dishes available today</target></trans-unit>
+      <trans-unit id="section.categorias"><source>Categorías</source><target>Categories</target></trans-unit>
+      <trans-unit id="section.verTodas"><source>Ver todas →</source><target>See all →</target></trans-unit>
+      <trans-unit id="section.platillos"><source>Platillos destacados</source><target>Featured dishes</target></trans-unit>
+      <trans-unit id="producto.agregar"><source>Agregar al carrito</source><target>Add to cart</target></trans-unit>
+      <trans-unit id="section.ofertas"><source>Ofertas especiales</source><target>Special offers</target></trans-unit>
+      <trans-unit id="oferta.titulo"><source>2x1 en hamburguesas</source><target>2x1 on burgers</target></trans-unit>
+      <trans-unit id="oferta.descripcion"><source>Todos los miércoles · Válido hasta agotar existencias</source><target>Every Wednesday · Valid while supplies last</target></trans-unit>
+      <trans-unit id="oferta.boton"><source>Ver oferta</source><target>See offer</target></trans-unit>
+      <trans-unit id="footer.derechos"><source>© 2026 Verde Sazón · Todos los derechos reservados</source><target>© 2026 Verde Sazón · All rights reserved</target></trans-unit>
+      <trans-unit id="admin.dashboard"><source>Dashboard</source><target>Dashboard</target></trans-unit>
+      <trans-unit id="admin.subtitle"><source>Panel de administración de Verde Sazón</source><target>Verde Sazón administration panel</target></trans-unit>
+      <trans-unit id="admin.ventas"><source>Ventas del día</source><target>Today's sales</target></trans-unit>
+      <trans-unit id="admin.pedidos"><source>Pedidos activos</source><target>Active orders</target></trans-unit>
+      <trans-unit id="admin.productos"><source>Productos</source><target>Products</target></trans-unit>
+      <trans-unit id="admin.disponibles"><source>Disponibles</source><target>Available</target></trans-unit>
+      <trans-unit id="admin.gestion"><source>Gestión de Platillos</source><target>Dish Management</target></trans-unit>
+      <trans-unit id="admin.nuevo"><source>+ Nuevo platillo</source><target>+ New dish</target></trans-unit>
+      <trans-unit id="admin.cerrar"><source>✕ Cerrar</source><target>✕ Close</target></trans-unit>
+      <trans-unit id="admin.editar"><source>Editar platillo</source><target>Edit dish</target></trans-unit>
+      <trans-unit id="admin.nuevoForm"><source>Nuevo platillo</source><target>New dish</target></trans-unit>
+      <trans-unit id="form.nombre"><source>Nombre</source><target>Name</target></trans-unit>
+      <trans-unit id="form.categoria"><source>Categoría</source><target>Category</target></trans-unit>
+      <trans-unit id="form.precio"><source>Precio</source><target>Price</target></trans-unit>
+      <trans-unit id="form.descripcion"><source>Descripción</source><target>Description</target></trans-unit>
+      <trans-unit id="form.disponible"><source>Disponible</source><target>Available</target></trans-unit>
+      <trans-unit id="form.cancelar"><source>Cancelar</source><target>Cancel</target></trans-unit>
+      <trans-unit id="form.guardar"><source>Guardar</source><target>Save</target></trans-unit>
+      <trans-unit id="form.actualizar"><source>Actualizar</source><target>Update</target></trans-unit>
+      <trans-unit id="tabla.nombre"><source>Nombre</source><target>Name</target></trans-unit>
+      <trans-unit id="tabla.categoria"><source>Categoría</source><target>Category</target></trans-unit>
+      <trans-unit id="tabla.descripcion"><source>Descripción</source><target>Description</target></trans-unit>
+      <trans-unit id="tabla.precio"><source>Precio</source><target>Price</target></trans-unit>
+      <trans-unit id="tabla.estado"><source>Estado</source><target>Status</target></trans-unit>
+      <trans-unit id="tabla.acciones"><source>Acciones</source><target>Actions</target></trans-unit>
+      <trans-unit id="tabla.editar"><source>Editar</source><target>Edit</target></trans-unit>
+      <trans-unit id="tabla.eliminar"><source>Eliminar</source><target>Delete</target></trans-unit>
+      <trans-unit id="estado.disponible"><source>Disponible</source><target>Available</target></trans-unit>
+      <trans-unit id="estado.noDisponible"><source>No disponible</source><target>Not available</target></trans-unit>
+      <trans-unit id="admin.sinProductos"><source>No hay productos aún. ¡Agrega el primero!</source><target>No products yet. Add the first one!</target></trans-unit>
+      <trans-unit id="sidebar.dashboard"><source>Dashboard</source><target>Dashboard</target></trans-unit>
+      <trans-unit id="sidebar.platillos"><source>Platillos</source><target>Dishes</target></trans-unit>
+      <trans-unit id="sidebar.categorias"><source>Categorías</source><target>Categories</target></trans-unit>
+      <trans-unit id="sidebar.pedidos"><source>Pedidos</source><target>Orders</target></trans-unit>
+      <trans-unit id="sidebar.usuarios"><source>Usuarios</source><target>Users</target></trans-unit>
+      <trans-unit id="sidebar.reportes"><source>Reportes</source><target>Reports</target></trans-unit>
+      <trans-unit id="sidebar.cerrarSesion"><source>Cerrar sesión</source><target>Sign out</target></trans-unit>
+    </body>
+  </file>
+</xliff>

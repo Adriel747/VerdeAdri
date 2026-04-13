@@ -1,6 +1,5 @@
 <div style="min-height:100vh;background:#f8faf8;font-family:'Segoe UI',sans-serif">
 
-  <!-- Navbar -->
   <header style="background:white;border-bottom:1px solid #e5e5e5;padding:0 40px;display:flex;align-items:center;justify-content:space-between;height:64px;position:sticky;top:0;z-index:100">
     <div style="display:flex;align-items:center;gap:10px">
       <div style="width:36px;height:36px;background:#1D9E75;border-radius:50%;display:flex;align-items:center;justify-content:center">
@@ -9,9 +8,9 @@
       <span style="font-weight:700;font-size:18px;color:#111">Verde Sazón</span>
     </div>
     <nav style="display:flex;gap:32px">
-      <a href="#inicio" style="font-size:14px;color:#555;text-decoration:none">Inicio</a>
-      <a href="#categorias" style="font-size:14px;color:#555;text-decoration:none">Categorías</a>
-      <a href="#menu" style="font-size:14px;color:#555;text-decoration:none">Menú</a>
+      <a href="#inicio" i18n="@@nav.inicio" style="font-size:14px;color:#555;text-decoration:none">Inicio</a>
+      <a href="#categorias" i18n="@@nav.categorias" style="font-size:14px;color:#555;text-decoration:none">Categorías</a>
+      <a href="#menu" i18n="@@nav.menu" style="font-size:14px;color:#555;text-decoration:none">Menú</a>
     </nav>
     <div style="display:flex;align-items:center;gap:16px">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#555" stroke-width="2" style="cursor:pointer"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -22,32 +21,30 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section id="inicio" style="background:linear-gradient(135deg,#1D9E75 0%,#0F6E56 100%);padding:60px 40px;text-align:center;color:white">
-    <h1 style="margin:0 0 12px;font-size:36px;font-weight:700">Comida fresca y saludable</h1>
-    <p style="margin:0 0 24px;font-size:16px;opacity:0.9">Descubre nuestros platillos disponibles hoy</p>
+    <h1 i18n="@@hero.title" style="margin:0 0 12px;font-size:36px;font-weight:700">Comida fresca y saludable</h1>
+    <p i18n="@@hero.subtitle" style="margin:0 0 24px;font-size:16px;opacity:0.9">Descubre nuestros platillos disponibles hoy</p>
     <div style="display:inline-flex;gap:12px">
       <span style="background:rgba(255,255,255,0.2);padding:6px 16px;border-radius:20px;font-size:13px">
-        {{ totalDisponibles }} platillos disponibles
+        {{ totalDisponibles }} <ng-container i18n="@@hero.disponibles">platillos disponibles</ng-container>
       </span>
       <span style="background:rgba(255,255,255,0.2);padding:6px 16px;border-radius:20px;font-size:13px">
-        {{ categorias.length - 1 }} categorías
+        {{ categorias.length - 1 }} <ng-container i18n="@@hero.categorias">categorías</ng-container>
       </span>
     </div>
   </section>
 
   <div style="max-width:1200px;margin:0 auto;padding:40px">
 
-    <!-- Categorías -->
     <section id="categorias" style="margin-bottom:40px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
-        <h2 style="margin:0;font-size:20px;font-weight:700;color:#111">Categorías</h2>
-        <a href="#menu" style="font-size:14px;color:#1D9E75;text-decoration:none">Ver todas →</a>
+        <h2 i18n="@@section.categorias" style="margin:0;font-size:20px;font-weight:700;color:#111">Categorías</h2>
+        <a href="#menu" i18n="@@section.verTodas" style="font-size:14px;color:#1D9E75;text-decoration:none">Ver todas →</a>
       </div>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px">
         <div *ngFor="let cat of categorias.slice(1)"
-          (click)="categoriaActiva = cat"
-          [style]="categoriaActiva === cat ?
+             (click)="categoriaActiva = cat"
+             [style]="categoriaActiva === cat ?
             'background:#1D9E75;border-radius:12px;padding:20px 12px;text-align:center;cursor:pointer;border:1px solid #1D9E75' :
             'background:white;border-radius:12px;padding:20px 12px;text-align:center;cursor:pointer;border:1px solid #e5e5e5'">
           <div style="font-size:28px;margin-bottom:8px">🍽️</div>
@@ -58,56 +55,45 @@
       </div>
     </section>
 
-    <!-- Platillos destacados -->
     <section id="menu" style="margin-bottom:40px">
       <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:20px">
-        <h2 style="margin:0;font-size:20px;font-weight:700;color:#111">Platillos destacados</h2>
-        <a href="#" (click)="categoriaActiva = 'Todas'" style="font-size:14px;color:#1D9E75;text-decoration:none">Ver todos →</a>
+        <h2 i18n="@@section.platillos" style="margin:0;font-size:20px;font-weight:700;color:#111">Platillos destacados</h2>
+        <a href="#" (click)="categoriaActiva = 'Todas'" i18n="@@section.verTodos" style="font-size:14px;color:#1D9E75;text-decoration:none">Ver todos →</a>
       </div>
 
-      <!-- Filtro tabs -->
       <div style="display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap">
         <button *ngFor="let cat of categorias"
-          (click)="categoriaActiva = cat"
-          [style]="categoriaActiva === cat ?
+                (click)="categoriaActiva = cat"
+                [style]="categoriaActiva === cat ?
             'padding:6px 18px;border-radius:20px;border:none;background:#1D9E75;color:white;font-size:13px;font-weight:500;cursor:pointer' :
             'padding:6px 18px;border-radius:20px;border:1px solid #ddd;background:white;color:#555;font-size:13px;cursor:pointer'">
           {{ cat }}
         </button>
       </div>
 
-      <!-- Grid de cards -->
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px">
         <div *ngFor="let p of productosFiltrados"
-          style="background:white;border-radius:12px;border:1px solid #e5e5e5;overflow:hidden;transition:transform 0.2s"
-          onmouseover="this.style.transform='translateY(-4px)'"
-          onmouseout="this.style.transform='translateY(0)'">
+             style="background:white;border-radius:12px;border:1px solid #e5e5e5;overflow:hidden;transition:transform 0.2s"
+             onmouseover="this.style.transform='translateY(-4px)'"
+             onmouseout="this.style.transform='translateY(0)'">
 
-          <!-- Imagen con color por categoría -->
           <div [style]="'height:180px;display:flex;align-items:center;justify-content:center;font-size:64px;background:' + getColorCategoria(p.categoria)">
             {{ getEmojiCategoria(p.categoria) }}
           </div>
 
           <div style="padding:16px">
-            <!-- Nombre y badge disponible -->
             <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:6px">
               <h3 style="margin:0;font-size:15px;font-weight:600;color:#111;flex:1">{{ p.nombre }}</h3>
-              <span style="background:#e1f5ee;color:#0F6E56;font-size:11px;padding:3px 8px;border-radius:20px;white-space:nowrap;margin-left:8px">Disponible</span>
+              <span i18n="@@estado.disponible" style="background:#e1f5ee;color:#0F6E56;font-size:11px;padding:3px 8px;border-radius:20px;white-space:nowrap;margin-left:8px">Disponible</span>
             </div>
-
-            <!-- Descripción -->
             <p style="margin:0 0 12px;font-size:13px;color:#888;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">
               {{ p.descripcion }}
             </p>
-
-            <!-- Precio y categoría -->
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px">
               <span style="font-size:20px;font-weight:700;color:#1D9E75">${{ p.precio }}</span>
               <span style="font-size:12px;background:#f0f7f0;color:#0F6E56;padding:4px 10px;border-radius:6px">{{ p.categoria }}</span>
             </div>
-
-            <!-- Botón agregar -->
-            <button style="width:100%;padding:10px;background:#1D9E75;color:white;border:none;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer">
+            <button i18n="@@producto.agregar" style="width:100%;padding:10px;background:#1D9E75;color:white;border:none;border-radius:8px;font-size:13px;font-weight:500;cursor:pointer">
               Agregar al carrito
             </button>
           </div>
@@ -115,30 +101,26 @@
       </div>
 
       <div *ngIf="productosFiltrados.length === 0" style="text-align:center;padding:60px 0;color:#aaa">
-        <p style="margin:0;font-size:15px">No hay platillos disponibles en esta categoría</p>
+        <p i18n="@@menu.sinProductos" style="margin:0;font-size:15px">No hay platillos disponibles en esta categoría</p>
       </div>
     </section>
 
-    <!-- Ofertas especiales -->
     <section style="margin-bottom:40px">
-      <h2 style="margin:0 0 20px;font-size:20px;font-weight:700;color:#111">Ofertas especiales</h2>
+      <h2 i18n="@@section.ofertas" style="margin:0 0 20px;font-size:20px;font-weight:700;color:#111">Ofertas especiales</h2>
       <div style="background:linear-gradient(135deg,#1D9E75,#0F6E56);border-radius:16px;padding:32px;color:white;display:flex;align-items:center;justify-content:space-between">
         <div>
-          <h3 style="margin:0 0 8px;font-size:22px;font-weight:700">2x1 en hamburguesas</h3>
-          <p style="margin:0 0 20px;opacity:0.9;font-size:14px">Todos los miércoles • Válido hasta agotar existencias</p>
-          <button style="background:white;color:#1D9E75;border:none;border-radius:8px;padding:10px 24px;font-size:14px;font-weight:600;cursor:pointer">
+          <h3 i18n="@@oferta.titulo" style="margin:0 0 8px;font-size:22px;font-weight:700">2x1 en hamburguesas</h3>
+          <p i18n="@@oferta.descripcion" style="margin:0 0 20px;opacity:0.9;font-size:14px">Todos los miércoles • Válido hasta agotar existencias</p>
+          <button i18n="@@oferta.boton" style="background:white;color:#1D9E75;border:none;border-radius:8px;padding:10px 24px;font-size:14px;font-weight:600;cursor:pointer">
             Ver oferta
           </button>
         </div>
         <div style="font-size:80px">🍔</div>
       </div>
     </section>
-
   </div>
 
-  <!-- Footer -->
   <footer style="background:white;border-top:1px solid #e5e5e5;padding:24px 40px;text-align:center">
-    <p style="margin:0;font-size:13px;color:#888">© 2026 Verde Sazón · Todos los derechos reservados</p>
+    <p i18n="@@footer.derechos" style="margin:0;font-size:13px;color:#888">© 2026 Verde Sazón · Todos los derechos reservados</p>
   </footer>
-
 </div>

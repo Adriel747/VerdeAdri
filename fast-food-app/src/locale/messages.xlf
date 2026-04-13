@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="login.title" datatype="html">
+        <source>Verde Sazón</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.subtitle" datatype="html">
+        <source>Inicia sesión en tu cuenta</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">13,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.email" datatype="html">
+        <source>Correo electrónico</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">17,18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.email.placeholder" datatype="html">
+        <source>tu@email.com</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.password" datatype="html">
+        <source>Contraseña</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">24,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.password.placeholder" datatype="html">
+        <source>••••••••</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.forgot" datatype="html">
+        <source>¿Olvidaste tu contraseña?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">31,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.button" datatype="html">
+        <source>Iniciar sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">40,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.loading" datatype="html">
+        <source>Entrando...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.noAccount" datatype="html">
+        <source>¿No tienes cuenta?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">45,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="login.register" datatype="html">
+        <source> Regístrate aquí</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/login/login.html</context>
+          <context context-type="linenumber">46,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.inicio" datatype="html">
+        <source>Inicio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.categorias" datatype="html">
+        <source>Categorías</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="nav.menu" datatype="html">
+        <source>Menú</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">13,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.title" datatype="html">
+        <source>Comida fresca y saludable</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">25,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.subtitle" datatype="html">
+        <source>Descubre nuestros platillos disponibles hoy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.disponibles" datatype="html">
+        <source>platillos disponibles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">29,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="hero.categorias" datatype="html">
+        <source>categorías</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">32,33</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section.categorias" datatype="html">
+        <source>Categorías</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section.verTodas" datatype="html">
+        <source>Ver todas →</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">42,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section.platillos" datatype="html">
+        <source>Platillos destacados</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section.verTodos" datatype="html">
+        <source>Ver todos →</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">61,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="estado.disponible" datatype="html">
+        <source>Disponible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">87,89</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">163,164</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="producto.agregar" datatype="html">
+        <source> Agregar al carrito </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">97,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="menu.sinProductos" datatype="html">
+        <source>No hay platillos disponibles en esta categoría</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">104,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="section.ofertas" datatype="html">
+        <source>Ofertas especiales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">109,110</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oferta.titulo" datatype="html">
+        <source>2x1 en hamburguesas</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">112,113</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oferta.descripcion" datatype="html">
+        <source>Todos los miércoles • Válido hasta agotar existencias</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">113,114</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="oferta.boton" datatype="html">
+        <source> Ver oferta </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="footer.derechos" datatype="html">
+        <source>© 2026 Verde Sazón · Todos los derechos reservados</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/menu/menu.html</context>
+          <context context-type="linenumber">124,127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.adminPanel" datatype="html">
+        <source>Admin Panel</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">8,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">14,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.platillos" datatype="html">
+        <source>Platillos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.categorias" datatype="html">
+        <source>Categorías</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.pedidos" datatype="html">
+        <source>Pedidos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.usuarios" datatype="html">
+        <source>Usuarios</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.reportes" datatype="html">
+        <source>Reportes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sidebar.cerrarSesion" datatype="html">
+        <source>Cerrar sesión</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">40,44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.dashboard" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">46,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.subtitle" datatype="html">
+        <source>Panel de administración de Verde Sazón</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.ventas" datatype="html">
+        <source>Ventas del día</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">51,52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.pedidos" datatype="html">
+        <source>Pedidos activos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">60,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.productos" datatype="html">
+        <source>Productos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">69,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.disponibles" datatype="html">
+        <source>Disponibles</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">78,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.gestion" datatype="html">
+        <source>Gestión de Platillos</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">90,91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.nuevo" datatype="html">
+        <source>+ Nuevo platillo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">93,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.cerrar" datatype="html">
+        <source>✕ Cerrar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">94,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.editar" datatype="html">
+        <source>Editar platillo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">100,101</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.nuevoForm" datatype="html">
+        <source>Nuevo platillo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">101,102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.nombre" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">105,106</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.nombre.placeholder" datatype="html">
+        <source>Nombre del platillo</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">106,107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.categoria" datatype="html">
+        <source>Categoría</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.categoria.placeholder" datatype="html">
+        <source>hamburguesas, pizza...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">111,112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.precio" datatype="html">
+        <source>Precio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">115,116</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.precio.placeholder" datatype="html">
+        <source>0.00</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.descripcion" datatype="html">
+        <source>Descripción</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">120,121</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.descripcion.placeholder" datatype="html">
+        <source>Descripción breve</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">121,122</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.disponible" datatype="html">
+        <source>Disponible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">128,130</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.cancelar" datatype="html">
+        <source>Cancelar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">133,134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.guardar" datatype="html">
+        <source>Guardar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">137,138</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="form.actualizar" datatype="html">
+        <source>Actualizar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">138,139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.nombre" datatype="html">
+        <source>Nombre</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">147,148</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.categoria" datatype="html">
+        <source>Categoría</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">148,149</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.descripcion" datatype="html">
+        <source>Descripción</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">149,150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.precio" datatype="html">
+        <source>Precio</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">150,151</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.estado" datatype="html">
+        <source>Estado</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">151,152</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.acciones" datatype="html">
+        <source>Acciones</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">152,154</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="estado.noDisponible" datatype="html">
+        <source>No disponible</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">164,165</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.editar" datatype="html">
+        <source>Editar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">168,169</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tabla.eliminar" datatype="html">
+        <source>Eliminar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">169,171</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="admin.sinProductos" datatype="html">
+        <source> No hay productos aún. ¡Agrega el primero! </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/components/productos/productos.html</context>
+          <context context-type="linenumber">176,178</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
